@@ -1,0 +1,24 @@
+/*
+ * Copyright (c) 2021 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include "jorian840.dtsi"
+
+
+&jian_transform {
+    col-offset = <22>;
+};
+
+&corjik_transform {
+    col-offset = <22>;
+};
+
+&minidox_transform {
+    col-offset = <22>;
+};
+
+&ferris_transform {
+    col-offset = <22>;
+};
