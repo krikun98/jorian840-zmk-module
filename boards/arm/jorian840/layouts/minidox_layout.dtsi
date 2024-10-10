@@ -1,56 +1,11 @@
+#include <layouts/kgoh/jian/5column.dtsi>
 #include <physical_layouts.dtsi>
 
 #include "position_map.dtsi"
 
-/ {
-        jorian840_minidox_layout: jorian840_minidox_layout {
-                compatible = "zmk,physical-layout";
-                display-name = "Minidox";
-
-                keys  //                 w   h    x    y     rot    rx    ry
-                = <&key_physical_attrs 100 100  200   62       0     0     0>
-                , <&key_physical_attrs 100 100  300   25       0     0     0>
-                , <&key_physical_attrs 100 100  401    0       0     0     0>
-                , <&key_physical_attrs 100 100  501   25       0     0     0>
-                , <&key_physical_attrs 100 100  601   37       0     0     0>
-                , <&key_physical_attrs 100 100 1200   37       0     0     0>
-                , <&key_physical_attrs 100 100 1300   25       0     0     0>
-                , <&key_physical_attrs 100 100 1400    0       0     0     0>
-                , <&key_physical_attrs 100 100 1501   25       0     0     0>
-                , <&key_physical_attrs 100 100 1601   62       0     0     0>
-                , <&key_physical_attrs 100 100  200  162       0     0     0>
-                , <&key_physical_attrs 100 100  300  125       0     0     0>
-                , <&key_physical_attrs 100 100  401  100       0     0     0>
-                , <&key_physical_attrs 100 100  501  125       0     0     0>
-                , <&key_physical_attrs 100 100  601  137       0     0     0>
-                , <&key_physical_attrs 100 100 1200  137       0     0     0>
-                , <&key_physical_attrs 100 100 1300  125       0     0     0>
-                , <&key_physical_attrs 100 100 1400  100       0     0     0>
-                , <&key_physical_attrs 100 100 1501  125       0     0     0>
-                , <&key_physical_attrs 100 100 1601  162       0     0     0>
-                , <&key_physical_attrs 100 100  200  262       0     0     0>
-                , <&key_physical_attrs 100 100  300  225       0     0     0>
-                , <&key_physical_attrs 100 100  401  200       0     0     0>
-                , <&key_physical_attrs 100 100  501  225       0     0     0>
-                , <&key_physical_attrs 100 100  601  237       0     0     0>
-                , <&key_physical_attrs 100 100 1200  237       0     0     0>
-                , <&key_physical_attrs 100 100 1300  225       0     0     0>
-                , <&key_physical_attrs 100 100 1400  200       0     0     0>
-                , <&key_physical_attrs 100 100 1501  225       0     0     0>
-                , <&key_physical_attrs 100 100 1601  262       0     0     0>
-                , <&key_physical_attrs 100 100  501  325       0     0     0>
-                , <&key_physical_attrs 100 100  601  337       0     0     0>
-                , <&key_physical_attrs 100 100  701  350       0     0     0>
-                , <&key_physical_attrs 100 100 1100  350       0     0     0>
-                , <&key_physical_attrs 100 100 1200  337       0     0     0>
-                , <&key_physical_attrs 100 100 1300  325       0     0     0>
-                ;
-        };
-};
-
 &layouts_jorian840_position_map{
-        minidox {
-                physical-layout = <&jorian840_minidox_layout>;
+        jorian840_minidox_mapping: minidox {
+                physical-layout = <&kgoh_jian_5col_layout>;
 
                 positions
                 = <36 37  0  1  2  3  4        5  6  7  8  9 38 39>

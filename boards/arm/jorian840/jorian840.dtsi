@@ -13,9 +13,9 @@
 #include "layouts/minidox_layout.dtsi"
 #include "layouts/ferris_layout.dtsi"
 
-&jorian840_jian_layout { transform = <&jian_transform>; };
-&jorian840_corjik_layout { transform = <&corjik_transform>; };
-&jorian840_minidox_layout { transform = <&minidox_transform>; };
+&kgoh_jian_full_layout { transform = <&jian_transform>; };
+&kgoh_jian_6col_layout { transform = <&corjik_transform>; };
+&kgoh_jian_5col_layout { transform = <&minidox_transform>; };
 &jorian840_ferris_layout { transform = <&ferris_transform>; };
 
 / {
@@ -27,7 +27,7 @@
 		zephyr,sram = &sram0;
 		zephyr,flash = &flash0;
 		zmk,kscan = &kscan0;
-		zmk,physical_layout = &jorian840_jian_layout;
+		zmk,physical_layout = &kgoh_jian_full_layout;
 		zmk,battery = &vbatt;
 	};
 
