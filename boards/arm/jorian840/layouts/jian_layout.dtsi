@@ -1,64 +1,19 @@
+#include <layouts/kgoh/jian/full.dtsi>
 #include <physical_layouts.dtsi>
 
 #include "position_map.dtsi"
 
-/ {
-        jorian840_jian_layout: jorian840_jian_layout {
-                compatible = "zmk,physical-layout";
-                display-name = "Jian";
+&kgoh_jian_full_layout {
+        display-name = "Jian";
+};
 
-                keys  //                 w   h    x    y     rot    rx    ry
-                = <&key_physical_attrs 100 100    0  150       0     0     0>
-                , <&key_physical_attrs 100 100  100   75       0     0     0>
-                , <&key_physical_attrs 100 100  200   62       0     0     0>
-                , <&key_physical_attrs 100 100  300   25       0     0     0>
-                , <&key_physical_attrs 100 100  401    0       0     0     0>
-                , <&key_physical_attrs 100 100  501   25       0     0     0>
-                , <&key_physical_attrs 100 100  601   37       0     0     0>
-                , <&key_physical_attrs 100 100 1200   37       0     0     0>
-                , <&key_physical_attrs 100 100 1300   25       0     0     0>
-                , <&key_physical_attrs 100 100 1400    0       0     0     0>
-                , <&key_physical_attrs 100 100 1501   25       0     0     0>
-                , <&key_physical_attrs 100 100 1601   62       0     0     0>
-                , <&key_physical_attrs 100 100 1701   75       0     0     0>
-                , <&key_physical_attrs 100 100 1801  150       0     0     0>
-                , <&key_physical_attrs 100 100  100  175       0     0     0>
-                , <&key_physical_attrs 100 100  200  162       0     0     0>
-                , <&key_physical_attrs 100 100  300  125       0     0     0>
-                , <&key_physical_attrs 100 100  401  100       0     0     0>
-                , <&key_physical_attrs 100 100  501  125       0     0     0>
-                , <&key_physical_attrs 100 100  601  137       0     0     0>
-                , <&key_physical_attrs 100 100 1200  137       0     0     0>
-                , <&key_physical_attrs 100 100 1300  125       0     0     0>
-                , <&key_physical_attrs 100 100 1400  100       0     0     0>
-                , <&key_physical_attrs 100 100 1501  125       0     0     0>
-                , <&key_physical_attrs 100 100 1601  162       0     0     0>
-                , <&key_physical_attrs 100 100 1701  175       0     0     0>
-                , <&key_physical_attrs 100 100  100  275       0     0     0>
-                , <&key_physical_attrs 100 100  200  262       0     0     0>
-                , <&key_physical_attrs 100 100  300  225       0     0     0>
-                , <&key_physical_attrs 100 100  401  200       0     0     0>
-                , <&key_physical_attrs 100 100  501  225       0     0     0>
-                , <&key_physical_attrs 100 100  601  237       0     0     0>
-                , <&key_physical_attrs 100 100 1200  237       0     0     0>
-                , <&key_physical_attrs 100 100 1300  225       0     0     0>
-                , <&key_physical_attrs 100 100 1400  200       0     0     0>
-                , <&key_physical_attrs 100 100 1501  225       0     0     0>
-                , <&key_physical_attrs 100 100 1601  262       0     0     0>
-                , <&key_physical_attrs 100 100 1701  275       0     0     0>
-                , <&key_physical_attrs 100 100  501  325       0     0     0>
-                , <&key_physical_attrs 100 100  601  337       0     0     0>
-                , <&key_physical_attrs 100 100  701  350       0     0     0>
-                , <&key_physical_attrs 100 100 1100  350       0     0     0>
-                , <&key_physical_attrs 100 100 1200  337       0     0     0>
-                , <&key_physical_attrs 100 100 1300  325       0     0     0>
-                ;
-        };
+&layouts_kgoh_jian_position_map {
+        status = "disabled";
 };
 
 &layouts_jorian840_position_map{
-        jian {
-                physical-layout = <&jorian840_jian_layout>;
+        jorian840_jian_posmap: jian {
+                physical-layout = <&kgoh_jian_full_layout>;
 
                 positions
                 = < 0  1  2  3  4  5  6        7  8  9 10 11 12 13>
